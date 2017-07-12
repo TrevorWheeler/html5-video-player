@@ -68,6 +68,9 @@ function updatePlayer() {
         document.getElementById("screen").style.display = "block";
         document.getElementById("screenPlayIcon").style.display = "none";
         document.getElementById("screenReplayIcon").style.display = "block";
+    } else if (video.paused) {
+        document.getElementById("screenPlayIcon").style.display = "block";
+        document.getElementById("screenReplayIcon").style.display = "none";
     }
 
 }
