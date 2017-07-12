@@ -24,6 +24,15 @@ video {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000', GradientType=1);
 }
 
+#screenReplayIcon {
+    display: none;
+    line-height: 281px;
+}
+
+#screenPlayIcon {
+    line-height: 281px;
+}
+
 #player {
     background-color: black;
     display: inline-block;
@@ -35,22 +44,23 @@ video {
 
 #progressBarContainer {
     background-color: lightblue;
+    position: relative;
 }
 
 #progressBar {
     height: 5px;
     width: 0%;
-    background-color: blue;
+    background-color: #F08424;
 }
 
 #buttonsContainer {
-    height: 50px;
+    height: 25px;
+    padding-top: 5px;
 }
 
 #buttonsContainer>* {
     display: inline-block;
-    line-height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 10px;
     vertical-align: middle;
 }
@@ -73,7 +83,7 @@ video {
 }
 
 #timeField {
-    color: blue;
+    color: white;
     font-size: 15px;
     cursor: default;
 }
@@ -90,21 +100,23 @@ i {
 }
 
 i:hover {
-    color: blue;
+    color: #F08424;
 }
 
 #soundBarContainer {
     margin-left: 0;
-    width: 100px;
-    height: 5px;
-    background-color: lightblue;
+    width: 150px;
+    height: 7px;
+    background-color: white;
     cursor: pointer;
+    position: relative;
+    bottom: 1px;
 }
 
 #soundBar {
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: #F08424;
 }
 
 #fullScreenButton {
