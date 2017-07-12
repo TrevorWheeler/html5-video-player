@@ -2,10 +2,11 @@
 window.addEventListener('load', function() {
     video = document.getElementById('video');
     screenButton = document.getElementById('screenPlayIcon');
-
+    screenReplayButton = document.getElementById('screenReplayIcon');
     progressBarContainer = document.getElementById('progressBarContainer');
     progressBar = document.getElementById('progressBar')
     playButton = document.getElementById('playButton');
+
     timeField = document.getElementById('timeField');
     soundButton = document.getElementById('soundButton');
     soundBarContainer = document.getElementById('soundBarContainer');
@@ -24,6 +25,7 @@ window.addEventListener('load', function() {
         soundBarContainer.addEventListener('click', changeVolume, false);
         fullScreenButton.addEventListener('click', fullscreen, false);
         screenButton.addEventListener('click', playOrPause, false);
+        screenReplayButton.addEventListener('click', playOrPause, false);
     }, false);
 }, false);
 
@@ -36,6 +38,10 @@ function playOrPause() {
         document.getElementById("replayIcon").style.display = "none";
         update = setInterval(updatePlayer, 30);
         document.getElementById("screen").style.display = "none";
+        document.getElementById("screenReplayIcon").style.display = "none";
+        document.getElementById("screenPlayIcon").style.display = "block";
+
+
     } else {
         video.pause();
         document.getElementById("pauseIcon").style.display = "none";
@@ -43,6 +49,9 @@ function playOrPause() {
         document.getElementById("replayIcon").style.display = "none";
         window.clearInterval(update);
         document.getElementById("screen").style.display = "block";
+        document.getElementById("screenReplayIcon").style.display = "none";
+        document.getElementById("screenPlayIcon").style.display = "block";
+
     }
 }
 
@@ -56,6 +65,9 @@ function updatePlayer() {
         document.getElementById("replayIcon").style.display = "block";
         document.getElementById("pauseIcon").style.display = "none";
         document.getElementById("playIcon").style.display = "none";
+        document.getElementById("screen").style.display = "block";
+        document.getElementById("screenPlayIcon").style.display = "none";
+        document.getElementById("screenReplayIcon").style.display = "block";
     }
 
 }
