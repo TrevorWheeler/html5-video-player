@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="player.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="player.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,10 @@
 
         <div id="videoContainer">
             <!-- We display a thumbnail preview image for your video using the poster attribute inside the video tag -->
-            <video poster="preview.jpg">
+            <div id="screen">
+                <i class="fa fa-play" id="screenPlayIcon"></i>
+            </div>
+            <video id="video" poster="preview.jpg">
             <source src="coffee.mp4">
             </video>
         </div>
@@ -37,14 +41,18 @@
         </div>
 
         <div id="buttonsContainer">
-            <i class="fa fa-play" id="playButton"></i>
-
+            <div id="playButton">
+                <i class="fa fa-play" id="playIcon"></i>
+                <i class="fa fa-pause" id="pauseIcon"></i>
+                <i class="fa fa-rotate-left" id="replayIcon"></i>
+            </div>
             <div id="timeField">
                 0:00 / 0:00
             </div>
-
-            <i class="fa fa-volume-up" id="soundButton"></i>
-
+            <div id="soundButton">
+                <i class="fa fa-volume-up" id="volumeIcon"></i>
+                <i class="fa fa-volume-off" id="muteIcon"></i>
+            </div>
             <div id="soundBarContainer">
                 <div id="soundBar">
                 </div>
