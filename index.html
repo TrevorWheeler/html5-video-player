@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Html5 Video player</title>
+    <meta name="description" content="A html5 video player for integration into your website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="player.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div id="player">
+
+        <div id="videoContainer">
+            <!-- We display a thumbnail preview image for your video using the poster attribute inside the video tag -->
+            <video poster="preview.jpg">
+            <source src="coffee.mp4">
+            </video>
+        </div>
+
+        <div id="progressBarContainer">
+            <div id="progressBar">
+            </div>
+        </div>
+
+        <div id="buttonsContainer">
+            <i class="fa fa-play" id="playButton"></i>
+
+            <div id="timeField">
+                0:00 / 0:00
+            </div>
+
+            <i class="fa fa-volume-up" id="soundButton"></i>
+
+            <div id="soundBarContainer">
+                <div id="soundBar">
+                </div>
+            </div>
+
+            <i class="fa fa-arrows-alt" id="fullScreenButton"></i>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+#videoContainer {
+    max-width: 500px;
+    height: 281px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+    background-color: black;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#progressBarContainer {
+    padding-bottom: 2px;
+}
+
+#progressBar {
+    height: 5px;
+    width: 50%;
+    background-color: blue;
+}
+
+#buttonsContainer {
+    height: 50px;
+}
+
+#buttonsContainer>* {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#timeField {
+    color: blue;
+    font-size: 15px;
+    cursor: default;
+}
+
+#soundButton {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+    color: white;
+}
+
+i:hover {
+    color: blue;
+}
+
+#soundBarContainer {
+    margin-left: 0;
+    width: 100px;
+    height: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#soundBar {
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+}
+
+#fullScreenButton {
+    float: right;
+}
