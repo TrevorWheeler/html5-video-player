@@ -53,16 +53,22 @@ video {
 }
 
 #buttonsContainer {
-    height: 25px;
-    padding-top: 5px;
+    height: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:space-between;
 }
 
-#buttonsContainer>* {
-    display: inline-block;
-    font-size: 15px;
-    margin: 0 10px;
-    vertical-align: middle;
+.left {
+    display:flex;
 }
+
+.right {
+    display:flex;
+}
+
+
+
 
 #pauseIcon {
     display: none;
@@ -77,25 +83,31 @@ video {
 }
 
 #playButton {
-    width: 25px;
-    margin-right: 0;
+    
+    margin:0 5px 0 0;
+    align-self:center;
 }
 
 #timeField {
     color: white;
     font-size: 15px;
     cursor: default;
+    align-self:center;
+    margin:0 10px 0 5px;
 }
 
 #soundButton {
-    margin-right: 0;
+    margin:0 5px 0 0;
     cursor: pointer;
     width: 20px;
+    align-self:center;
+    
 }
 
 i {
     cursor: pointer;
     color: white;
+    align-self:center;
 }
 
 i:hover {
@@ -108,8 +120,8 @@ i:hover {
     height: 7px;
     background-color: white;
     cursor: pointer;
-    position: relative;
-    bottom: 1px;
+ 
+    align-self:center;
 }
 
 #soundBar {

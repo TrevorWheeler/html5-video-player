@@ -13,7 +13,6 @@ module.exports = {
         filename: '[name].bundle.js',
         path: __dirname + '/dist',
     },
-    // devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist'
     },
@@ -42,7 +41,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
-      
+
         ]
     },
 
@@ -71,8 +70,8 @@ module.exports = {
             Popper: ['popper.js', 'default'],
         }),
         new CopyWebpackPlugin([
-            {from: 'src/img',to: 'img'},
-            {from: 'src/video',to: 'video'},
+            { from: 'src/img', to: 'img' },
+            { from: 'src/video', to: 'video' },
         ]),
 
     ]
