@@ -1,0 +1,59 @@
+{
+  "name": "html5-video-player",
+  "version": "1.0.0",
+  "description": "Video player in pure javascript.",
+  "main": "player.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrevorWheeler/html5-video-player.git"
+  },
+  "keywords": [
+    "video",
+    "player",
+    "javascript",
+    "html5",
+    "css"
+  ],
+  "author": "Trevor Wheeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrevorWheeler/html5-video-player/issues"
+  },
+  "homepage": "https://github.com/TrevorWheeler/html5-video-player#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "autoprefixer": "^9.4.10",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lost": "^8.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "rucksack-css": "^1.0.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
