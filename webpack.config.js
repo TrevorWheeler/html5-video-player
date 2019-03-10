@@ -41,7 +41,8 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
-            }
+            },
+      
         ]
     },
 
@@ -69,10 +70,10 @@ module.exports = {
             'window.jQuery': 'jquery',
             Popper: ['popper.js', 'default'],
         }),
-        new CopyWebpackPlugin([{
-            from: 'src/img',
-            to: 'img'
-        }]),
+        new CopyWebpackPlugin([
+            {from: 'src/img',to: 'img'},
+            {from: 'src/video',to: 'video'},
+        ]),
 
     ]
 };
